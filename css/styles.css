@@ -305,7 +305,6 @@ header {
 
 .features.list div {
   display: flex;
-
   justify-content: center;
   align-items: center;
 
@@ -333,7 +332,7 @@ header {
   display: flex;
 }
 
-.teammates.list li {
+.teammates.list > li {
   border-radius: 0px 0px 4px 4px;
 
   background-color: var(--main-light-color);
@@ -342,7 +341,7 @@ header {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.teammates.list li:not(:last-child) {
+.teammates.list > li:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -360,12 +359,58 @@ header {
   color: var(--secondary-text-color);
 
   margin-top: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
+
+.team .socials {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 30px;
+}
+
+.team .socials .list {
+  display: flex;
+}
+
+.team .socials li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team .socials a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  fill: var(--clients-and-socials-color);
+  background-color: var(--main-light-color);
+}
+
+.team .socials a:hover, 
+.team .socials a:focus {
+  fill: var(--main-light-color);
+  background-color: var(--accent-color);
+}
+
+/* .footer .socials p {
+  margin-bottom: 20px;
+
+  color: var(--main-light-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+} */
 
 /* Постоянные клиенты */
 
